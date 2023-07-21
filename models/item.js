@@ -33,10 +33,6 @@ const itemSchema = new Schema(
       required: true,
       unique: true
     },
-    flavor: {
-      type: String,
-      required: true
-    },
     qtyLabel: {
       type: String,
       required: true
