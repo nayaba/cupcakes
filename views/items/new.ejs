@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/items" method="POST">
+  <label>Name:</label>
+  <input type="text" name="name">
+  <label>Flavor:</label>
+  <input type="text" name="flavor">
+  <label>Qty Label:</label>
+  <input type="text" name="qtyLabel">
+  <label>Type</label>
+  <select name="mpaaRating">
+    <option value="Cupcake">Cupcake</option>
+    <option value="Round Cake">Round Cake</option>
+    <option value="Sheet Cake">Sheet Cake</option>
+    <option value="Other">Other</option>
+  </select>
+  <label>Price:</label>
+  <input type="number" name="price">
+  <label>Ingredients:</label>
+  <input type="text" name="ingredients">
+  <label>Images:</label>
+  <input type="text" name="images">
+  <label>Description:</label>
+  <input type="text" name="description">
+  <label>Allergen Free?</label>
+  <input type="checkbox" name="allergenFree" checked>
+  <input type="submit" value="Add Item">
+</form>
+
+<%- include('../partials/footer') %>

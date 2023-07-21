@@ -1,5 +1,5 @@
-const newItem = () => {
-  console.log('in the new item controller')
+const newItem = (req, res) => {
+  res.render('items/new', {title: 'Create a cupcake'})
 }
 
 module.exports = {
