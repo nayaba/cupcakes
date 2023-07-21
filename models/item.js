@@ -58,7 +58,7 @@ const itemSchema = new Schema(
       required: true
     },
     allergenFree: {
-      type: String,
+      type: Boolean,
       required: true,
       default: false
     },

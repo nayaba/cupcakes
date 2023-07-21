@@ -3,7 +3,7 @@ const router = express.Router()
 const itemsCtrl = require('../controllers/items')
 const ensureLoggedIn = require('../config/ensureLoggedIn')
 
-router.post('/', ensureLoggedIn, itemsCtrl.create)
-router.get('/new', ensureLoggedIn, itemsCtrl.new)
+router.post('/', itemsCtrl.create)
+router.get('/new', itemsCtrl.new)
 
 module.exports = router
