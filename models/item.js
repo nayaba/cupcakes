@@ -34,7 +34,7 @@ const itemSchema = new Schema(
     },
     flavor: {
       type: String,
-      enum: ['Vanilla', 'Chocolate', 'Lemon', 'Cookie Dough']
+      required: true
     },
     qtyLabel: {
       type: String,

@@ -9,7 +9,18 @@ const userSchema = new Schema(
       required: true
     },
     email: String,
-    avatar: String
+    avatar: String,
+    admin: {
+      type: Boolean,
+      required: true,
+      default: false
+    },
+    phone: String,
+    optIn: Boolean,
+    favorites: [{
+      type: Schema.Types.ObjectId,
+      ref: 'Item'
+    }]
   },
   {
     timestamps: true
